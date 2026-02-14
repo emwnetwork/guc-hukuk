@@ -378,3 +378,29 @@ a{color:inherit}
   width: 100%;
   max-width: 720px;
 }
+
+
+/* Kart kapak görselleri */
+.thumb{
+  height: 160px;
+  border-radius: 14px 14px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Her karta farklı görsel */
+.thumb--ceza{    background-image: url("clip.jpg"); }
+.thumb--ticaret{ background-image: url("clip.jpg"); }
+.thumb--kira{    background-image: url("clip.jpg"); }
+.thumb--sigorta{ background-image: url("clip.jpg"); }
+
+/* Görsel üstüne hafif karartı (yazılar daha premium görünür) */
+.thumb::after{
+  content:"";
+  display:block;
+  height:100%;
+  width:100%;
+  background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.35));
+  border-radius: 14px 14px 0 0;
+}
