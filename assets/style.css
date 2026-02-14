@@ -403,3 +403,82 @@ a{color:inherit}
   border-radius: 14px 14px 0 0;
   background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.35));
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Header info'yu yapışık değil, tasarım parçası gibi göster */
+.topbar__info{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+
+  background: #fafafa;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+}
+
+/* Tek tek info kutuları */
+.infoitem{
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+
+/* Label küçük ve “etiket” gibi */
+.infoitem__label{
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0,0,0,.55);
+  letter-spacing: .02em;
+}
+
+/* Değer daha güçlü */
+.infoitem__value{
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(0,0,0,.85);
+  text-decoration: none;
+}
+
+/* Araya ince ayraç gibi çizgi */
+.topbar__info .infoitem + .infoitem{
+  position: relative;
+}
+.topbar__info .infoitem + .infoitem::before{
+  content:"";
+  position:absolute;
+  left:-7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: rgba(0,0,0,.10);
+}
+
+/* Telefon linki hover */
+.infoitem__value:hover{
+  text-decoration: underline;
+}
+
+/* Mobilde alt alta güzel dursun */
+@media (max-width: 820px){
+  .topbar__info{
+    flex-direction: column;
+    gap: 6px;
+  }
+  .topbar__info .infoitem + .infoitem::before{
+    display:none;
+  }
+}
