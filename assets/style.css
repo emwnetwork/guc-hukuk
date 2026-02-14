@@ -29,50 +29,7 @@ a{color:inherit}
   margin-inline:auto;
 }
 
-/* TOPBAR */
-.topbar{
-  border-bottom:1px solid var(--line);
-  background:#fff;
-}
-.topbar__inner{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  padding:18px 0;
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  text-decoration:none;
-  color:#111;
-  min-width:240px;
-}
-.brand__mark{color:var(--gold)}
-.brand__text strong{display:block; letter-spacing:.5px}
-.brand__text small{display:block; color:var(--gold); margin-top:2px}
 
-.topbar__info{
-  display:flex;
-  gap:18px;
-  margin-left:auto;
-}
-.infoitem{
-  display:flex;
-  flex-direction:column;
-  gap:2px;
-  padding:0 8px;
-  border-left:1px solid var(--line);
-}
-.infoitem:first-child{border-left:0}
-.infoitem__label{
-  font-size:12px;
-  color:var(--muted);
-}
-.infoitem__value{
-  font-weight:600;
-  text-decoration:none;
-}
 
 /* BUTTONS */
 .btn{
