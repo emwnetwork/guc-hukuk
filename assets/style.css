@@ -384,7 +384,7 @@ a{color:inherit}
 .thumb{
   height: 160px;
   border-radius: 14px 14px 0 0;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
