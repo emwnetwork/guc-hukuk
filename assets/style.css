@@ -333,3 +333,48 @@ a{color:inherit}
 .brand__mark{display:flex;align-items:center}
 .brand__logo{height:44px;width:auto;display:block}
 .hero-logo{max-width:520px;width:100%;height:auto;display:block;margin:0 auto 14px}
+
+
+
+
+
+/* --- HEADER / LOGO ORTALAMA --- */
+.topbar__inner{
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 10px !important;
+}
+
+.brand{
+  flex-direction: column !important;   /* logo üstte, yazı altta */
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.brand__text{
+  text-align: center !important;
+}
+
+.topbar__info{
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Menü linklerini ortala */
+.nav__inner{
+  justify-content: center !important;
+}
+.nav__links{
+  justify-content: center !important;
+}
+
+/* İletişim tek sütun gibi dursun */
+.contact{
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+}
+.contact__box{
+  width: 100%;
+  max-width: 720px;
+}
