@@ -328,3 +328,8 @@ a{color:inherit}
   .nav__links a{padding:6px 0}
   .grid--2,.grid--3,.grid--4{grid-template-columns:1fr}
 }
+
+/* LOGO */
+.brand__mark{display:flex;align-items:center}
+.brand__logo{height:44px;width:auto;display:block}
+.hero-logo{max-width:520px;width:100%;height:auto;display:block;margin:0 auto 14px}
