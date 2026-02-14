@@ -307,3 +307,36 @@ a{color:inherit}
   .nav__links a{padding:6px 0}
   .grid--4{grid-template-columns:1fr}
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Buton ile mini bilgi satırı arasını aç */
+.topbar__cta{
+  margin-bottom: 14px; /* butonun altına boşluk */
+}
+
+/* Kadıköy/telefon satırını aşağı indir ve ferahlat */
+.topbar-mini{
+  margin-top: 10px;     /* biraz daha aşağı */
+  padding-top: 12px;    /* üstten boşluk */
+  border-top: 1px solid rgba(0,0,0,.06);  /* isteğe bağlı, ayırıcı çizgi */
+}
+
+/* Mobilde buton daha da ayrık dursun */
+@media (max-width: 720px){
+  .topbar__cta{
+    margin-bottom: 18px;
+  }
+  .topbar-mini{
+    margin-top: 12px;
+    padding-top: 14px;
+  }
+}
